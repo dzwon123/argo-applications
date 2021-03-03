@@ -9,10 +9,6 @@ spec:
   destination:
     namespace: helm-guestbook
     server: {{ .Values.spec.destination.server }}
-  syncPolicy:
-    automated:
-      selfHeal: true
-      prune: true
   project: default
   source:
     path: helm-guestbook
@@ -21,7 +17,5 @@ spec:
     helm:
       values: | 
         replicaCount: 2
-        image:
-          repository: gcr.io/heptio-images/ks-guestbook
 
   
