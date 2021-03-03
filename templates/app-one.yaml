@@ -20,6 +20,8 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
       values: | 
-        replicaCount: 3
+        replicaCount: 2
+        image:
+          repository: gcr.io/heptio-images/ks-guestbook
 
   
