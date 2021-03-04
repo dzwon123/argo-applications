@@ -16,6 +16,6 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
       values: | 
-        replicaCount: 1
+        replicaCount: 3
 
   
