@@ -15,7 +15,7 @@ spec:
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
-      values: | 
-        replicaCount: 1
+      valueFiles:
+      - values-new.yaml
 
   
